@@ -1,0 +1,759 @@
+body {
+    margin: 0;
+    color: rgba(28, 54, 83, 0.7);
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.sedna-home {
+    overflow: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fw-3 {
+    font-weight: 300;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.head-1 {
+    font-size: 60px;
+}
+
+.head-2 {
+    font-size: 40px;
+}
+
+.head-3 {
+    font-size: 24px;
+}
+
+.head-4 {
+    font-size: 15px;
+}
+
+.head-6 {
+    font-size: 11px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.btn-primary {
+    background: #ff5274;
+    border-radius: 40px;
+    color: #fff;
+    border: 2px solid #ff5274;
+    padding: 12px 48px;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    border-radius: 40px;
+    border: 2px solid #ff5274;
+    color: #ff5274;
+    padding: 12px 48px;
+}
+
+.btn-outline-primary:hover {
+    background: #ff5274;
+    color: #fff;
+    transition: 0.4s;
+    border: 2px solid #ff5274;
+}
+
+.caption {
+    font-weight: 300;
+    line-height: 1.67;
+    font-size: 15px;
+}
+
+.sedna-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.sedna-header.is-fixed {
+    background-color: rgba(38, 43, 57, 1);
+    box-shadow: 2px 2px 5px #2b2b33;
+    transition: 0.5s;
+}
+
+.sedna-header__content {
+    padding: 38px 20px 28px 20px;
+    position: relative;
+}
+
+.sedna-header__content::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #fff;
+    width: 96%;
+    margin: auto;
+}
+
+.company-logo {
+    margin-right: 70px;
+    display: inline-block;
+}
+
+.company-logo__img {
+    width: 104px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.nav-list {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.nav-list li:hover, .user-in:hover {
+    color: #ff5274;
+    transition: 0.4s;
+}
+
+.company-register {
+    font-size: 13px;
+}
+
+.user-in {
+    margin: 0 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.signup-btn {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 30px;
+    display: inline-block;
+}
+
+.about-sedna {
+    height: 750px;
+    background-color: rgba(38, 43, 57, 0.9);
+}
+
+.about-sedna::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+    background: url(../images/hero-image-01.png) top center/cover;
+    background-attachment: fixed;
+}
+
+.about-sedna__article {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about-sedna__content {
+    margin: auto;
+    max-width: 830px;
+}
+
+.about-sedna__content--heading {
+    color: #fff;
+}
+
+.about-sedna__content--caption {
+    color: #fff;
+    margin: 15px 0 0 0;
+    font-size: 20px;
+}
+
+.about-sedna__buttons {
+    margin-top: 84px;
+}
+
+.download-learn__btn {
+    font-size: 13px;
+    padding: 18px 0;
+    display: inline-block;
+    margin: 0 10px;
+    width: 210px;
+}
+
+.sedna-features {
+    padding: 120px 0;
+}
+
+.sedna-features__list li {
+    width: calc((100% - (15px * 2))/ 3);
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sedna-features__list li:last-child {
+    margin-right: 0;
+}
+
+.sedna-features__list--figure, .feat-figure {
+    display: inline-block;
+    width: 40px;
+    vertical-align: top;
+    margin-right: 24px;
+}
+
+.sedna-features__list--content, .feat-content {
+    display: inline-block;
+    max-width: 274px;
+}
+
+.sedna-features__list--caption {
+    margin: 10px 0 0 0;
+}
+
+.sedna-features__list--icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    object-fit: contain;
+}
+
+.sedna-advantages {
+    border: 1px solid #e6e9ea;
+    background: #f7f8fa;
+    position: relative;
+    padding: 110px 0;
+    overflow: hidden;
+}
+
+.sedna-advantages__product--lg {
+    width: 550px;
+    object-fit: contain;
+    position: absolute;
+    left: -120px;
+}
+
+.sedna-advantages__product--sm {
+    width: 300px;
+    object-fit: contain;
+    position: absolute;
+    bottom: -24%;
+    left: 22%;
+}
+
+.advantages-list__article {
+    max-width: 422px;
+    margin-left: auto;
+}
+
+.advantages-list__article--caption {
+    margin: 20px 0;
+}
+
+.advantages-list__features {
+    margin-top: 40px;
+}
+
+.feat-content__caption {
+    padding-top: 10px;
+}
+
+.advantages-list__features .feat {
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e9ea;
+}
+
+.advantages-list__features .feat:last-child {
+    border-bottom: none;
+}
+
+.about-sketch {
+    position: relative;
+    padding: 136px 0 290px 0;
+}
+
+.about-sketch__content {
+    max-width: 422px;
+}
+
+.about-sketch__content .sketch-btn {
+    font-size: 13px;
+    padding: 10px 35px;
+    display: inline-block;
+    margin: 24px 0;
+}
+
+.about-sketch__figure--image {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    width: 730px;
+    object-fit: contain;
+}
+
+.download-section {
+    background: rgb(61, 67, 81, 0.8);
+    position: relative;
+    padding: 100px 0;
+}
+
+.download-section__content--head {
+    color: #fff;
+}
+
+.sketch {
+    display: inline;
+}
+
+.sketch .superscript-text {
+    font-size: 25px;
+    color: #f69d52;
+}
+
+.download-section__content--caption {
+    margin: 16px 0 0 0;
+    font-size: 16px;
+    color: #acb1b4;
+    line-height: 1.56;
+}
+
+.download-section__content--btn {
+    display: inline-block;
+    margin: 50px 0 100px 0;
+}
+
+.download-section__content--figure {
+    position: absolute;
+    bottom: -18%;
+    left: 0;
+    right: 0;
+}
+
+.download-section__content--logo {
+    width: 230px;
+    object-fit: contain;
+}
+
+.product-section {
+    background: #f7f8fa;
+    padding: 180px 0 120px 0;
+}
+
+.product-content {
+    padding-bottom: 108px;
+}
+
+.product-features__list {
+    margin-top: 82px;
+}
+
+.product-features__list li {
+    max-width: calc((100% - 15px)/ 2);
+    display: inline-block;
+}
+
+.product-features__list li:first-child {
+    padding-right: 100px;
+    border-right: 1px solid #e6e9ea;
+}
+
+.product-features__list li:last-child {
+    padding-left: 100px;
+}
+
+.product-features__head {
+    padding-bottom: 20px;
+}
+
+.product-features__caption {
+    line-height: 2;
+    color: #7a8387;
+}
+
+.product-section__figure {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 3);
+    margin: 0 -3px;
+}
+
+.product-picture {
+    width: 100%;
+    object-fit: contain;
+}
+
+.product-section__figcaption {
+    margin: 34px 0 56px;
+}
+
+.product-caption {
+    color: #677074;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.product-section .arrow-right {
+    width: 6px;
+    height: 15px;
+    color: #677074;
+    padding-top: 5px;
+}
+
+.product-section__btn .more-news {
+    display: inline-block;
+    padding: 10px 36px;
+    font-size: 13px;
+}
+
+.carousel-slide {
+    position: relative;
+    height: 500px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.user-image {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: auto;
+}
+
+.slide-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide-content__head {
+    font-style: italic;
+    margin: 26px 0;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 10;
+}
+
+.slick-arrow::before{
+    font-family: "Flaticon";
+    font-size: 30px;
+}
+
+.slick-prev::before{
+    content: "\f101";
+}
+
+.slick-next::before{
+    content: "\f100";
+}
+
+.slick-prev {
+    left: 58px;
+}
+
+.slick-next {
+    right: 58px;
+}
+
+.slick-dots {
+    bottom: 36px;
+}
+
+@media (min-width: 992px) {
+    .mobile-menu, .company-register .menu-button {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .mobile-menu {
+        display: none;
+    }
+    .company-logo {
+        margin: 0;
+    }
+    .nav-menu {
+        color: #fff;
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .nav-menu li {
+        padding: 10px 0;
+    }
+    .nav-list, .company-register .signup-btn {
+        display: none;
+    }
+    .company-register .menu-button .menu {
+        width: 20px;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+    .company-register .menu-button {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .company-register {
+        padding-top: 10px;
+    }
+    .download-learn__btn, .download-section__content--btn {
+        padding: 12px 0;
+        width: 180px;
+        font-size: 13px;
+    }
+    .head-1 {
+        font-size: 40px;
+    }
+    .head-3 {
+        font-size: 18px;
+    }
+    .head-4 {
+        font-size: 14px;
+    }
+    .sedna-features, .sedna-advantages, .download-section {
+        padding: 80px 0;
+    }
+    .sedna-features__list--content {
+        max-width: 150px;
+    }
+    .sedna-advantages__product--lg {
+        width: 380px;
+        left: -60px;
+    }
+    .sedna-advantages__product--sm {
+        width: 240px;
+        left: 20%;
+        bottom: -2%;
+    }
+    .sedna-features__list--figure, .feat-figure {
+        margin-right: 20px;
+    }
+    .about-sketch__content--head {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .advantages-list__article {
+        max-width: 330px;
+    }
+    .feat-content {
+        max-width: 260px;
+    }
+    .about-sketch {
+        padding: 70px 0 100px 0;
+        overflow: hidden;
+    }
+    .about-sketch__figure--image {
+        top: 60px;
+        right: -80px;
+        width: 540px;
+    }
+    .about-sketch__content {
+        max-width: 300px;
+    }
+    .product-section {
+        padding: 140px 0 100px 0;
+    }
+    .product-content__head {
+        text-align: center;
+    }
+    .product-features__list li:first-child {
+        padding-right: 30px;
+    }
+    .product-features__list li:last-child {
+        padding-left: 30px;
+    }
+    .product-content {
+        padding-bottom: 90px;
+    }
+    .product-section__figure {
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-sedna {
+        height: 600px;
+    }
+    .about-sedna::before {
+        height: 600px;
+    }
+    .head-1 {
+        font-size: 25px;
+    }
+    .head-2 {
+        font-size: 22px;
+    }
+    .head-3 {
+        font-size: 16px;
+    }
+    .head-4 {
+        font-size: 13px;
+    }
+    .about-sedna__buttons {
+        margin-top: 60px;
+    }
+    .download-learn__btn, .download-section__content--btn {
+        font-size: 12px;
+        margin: 10px;
+    }
+    .sedna-features, .sedna-advantages, .download-section, .about-sketch {
+        padding: 60px 0;
+    }
+    .sedna-features__list--figure, .feat-figure {
+        width: 30px;
+        margin-right: 20px;
+    }
+    .sedna-features__list--icon, .feat-icons {
+        width: 30px;
+        height: 30px;
+    }
+    .sedna-features__list {
+        width: 90%;
+    }
+    .caption {
+        font-size: 12px;
+    }
+    .sedna-features__list--content {
+        max-width: 78%;
+    }
+    .sedna-features__list li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sedna-advantages__product {
+        display: none;
+    }
+    .advantages-list__article {
+        max-width: 100%;
+    }
+    .feat-content {
+        max-width: 80%;
+    }
+    .advantages-list__article--head, .about-sketch__content--head {
+        font-size: 16px;
+        text-align: center;
+    }
+    .about-sketch__content {
+        max-width: 100%;
+    }
+    .about-sketch__figure {
+        display: none;
+    }
+    .about-sketch__content .about-sketch__content--btn {
+        text-align: center;
+    }
+    .about-sketch__content .sketch-btn {
+        font-size: 12px;
+        padding: 12px 0px;
+        width: 180px;
+        margin: 20px 0;
+    }
+    .sketch .superscript-text {
+        font-size: 14px;
+    }
+    .download-section__content--caption {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .product-section {
+        padding: 90px 0 60px 0;
+    }
+    .download-section__content--logo {
+        width: 100px;
+        object-fit: contain;
+    }
+    .product-features__list {
+        margin-top: 60px;
+    }
+    .product-features__list li:first-child {
+        display: block;
+        max-width: 100%;
+        padding: 0;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .product-features__list li:last-child {
+        display: block;
+        max-width: 100%;
+        padding: 0;
+    }
+    .product-content {
+        padding-bottom: 40px;
+    }
+    .product-picture {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+}

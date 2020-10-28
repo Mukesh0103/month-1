@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.header-section{
+    padding: 24px;
+    border-bottom: 1px solid #cacaca;
+    position: relative;
+}
+.menu-icon{
+    height: 15px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.menu-icon i::before{
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0;
+}
+.company-logo{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-weight: 600;
+    background: #fdad35;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.company-name{
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-contents{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.header-contents li{
+    display: inline-block;
+    list-style-type: none;
+}
+.header-contents .search-icon{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    margin-right: 48px;
+    cursor: pointer;
+}
+.header-contents .search-icon i::before{
+    font-size: 15px;
+    font-weight: 900;
+}
+.user-profile .profile-dropdown{
+    cursor: pointer;
+}
+.user-profile .profile-dropdown .profile-image{
+    margin: 0;
+}
+.user-profile .profile-dropdown .profile-image img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user-profile .profile-dropdown .dropdown-arrow i{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 24px;
+}
+.user-profile .profile-dropdown .dropdown-arrow i::before{
+    font-size: 10px;
+    font-weight: 900;
+}

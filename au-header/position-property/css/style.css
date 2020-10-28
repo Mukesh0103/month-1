@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.header-section{
+    padding: 24px;
+    border-bottom: 1px solid #cacaca;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.menu-icon{
+    height: 15px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.company-logo{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-weight: 600;
+    background: #fdad35;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 18px;
+    text-decoration: none;
+}
+.company-name{
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0;
+}
+.header-contents{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+.header-contents li{
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+}
+.header-contents .search-icon{
+    height: 15px;
+    margin-right: 48px;
+}
+.profile-dropdown{
+    display: inline-block;
+    vertical-align: middle;
+}
+.profile-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.dropdown-arrow{
+    height: 10px;
+}
+.content-section{
+    height: 600px;
+    width: 80%;
+    margin: 84px auto 0;
+}
+.content-section .sections .card{
+    height: 200px;
+    display: inline-block;
+    width: calc((100% - (20px * 3))/ 4);
+    border: 2px solid #cacaca;
+    margin: 15px 15px 0 0;
+}
+
+.content-section .sections .card:nth-child(4n + 4){
+    margin-right: 0;
+}
